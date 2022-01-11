@@ -1,12 +1,28 @@
-import React from "react";
-import BaseBox from "./BaseBox";
+import styled from "styled-components";
+import {
+  color,
+  space,
+  typography,
+  layout,
+  flexbox,
+  grid,
+  background,
+  border,
+  position,
+  shadow,
+} from "styled-system";
 
-interface BoxProps {
-  children: React.ReactNode;
-}
-
-const Box = ({ children }: BoxProps) => {
-  <BaseBox>{children}</BaseBox>;
-};
+const Box = styled.div`
+  ${background};
+  ${border};
+  ${color};
+  ${flexbox};
+  ${grid};
+  ${layout};
+  ${shadow};
+  ${space};
+  ${typography};
+  ${position};
+`;
 
 export default Box;
