@@ -12,17 +12,17 @@ import {
   shadow,
 } from "styled-system";
 
-const Box = styled.div`
-  ${background};
-  ${border};
-  ${color};
-  ${flexbox};
-  ${grid};
-  ${layout};
-  ${shadow};
-  ${space};
-  ${typography};
-  ${position};
-`;
+const Box = styled.div(
+  background,
+  border,
+  color,
+  flexbox,
+  grid,
+  layout,
+  shadow,
+  space,
+  typography,
+  position
+);
 
 export default Box;
